@@ -20,6 +20,9 @@ await homepage.homeurl
 
 await Login.customerlogin("test@123","123456");
 
+await Login.emailmsg();
+
+
 });
 
 it("Login with Invalid Password",async()=>{

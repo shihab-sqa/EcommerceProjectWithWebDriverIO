@@ -36,6 +36,11 @@ return $("//button[contains(text(),'Login')]");
 
 }
 
+get invalidEmailText(){
+
+return $("//p[contains(text(),'Please enter a valid email or mobile number')]");
+
+}
 
 async customerlogin(name, pass){
    
@@ -58,6 +63,12 @@ await browser.pause(1000);
 await (await this.loginbutton).click();
 
 await browser.pause(1000);
+
+
+}
+async emailmsg(){
+    await (await this.invalidEmailText).getText();
+
 }
 
 
