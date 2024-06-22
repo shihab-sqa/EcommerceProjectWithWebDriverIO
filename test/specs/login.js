@@ -8,6 +8,8 @@ it("Invoke Browser",async()=>{
 
 await homepage.homeurl
 
+await expect (browser).toHaveTitle("Home | Alipo")
+
 })
 
 
